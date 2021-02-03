@@ -17,7 +17,9 @@
     :open-url            false}))
 
 
-(defn with-devcards [conf main-ns])
+(defn with-devcards [conf main-ns]
+  (assoc conf :extra-main-files {:devcards {:main main-ns
+                                            :output-to (str web-root "public/cljs-out/devcards.js")}}))
 
 (defn figwheel-opts
   ([opts]
