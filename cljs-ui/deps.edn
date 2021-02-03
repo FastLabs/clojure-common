@@ -1,0 +1,6 @@
+{:pahts   ["src"]
+ :deps    {}
+ :aliases {:dev {
+                 :extra-paths ["dev" "test"]
+                 :extra-deps  {org.clojure/clojure       {:mvn/version "1.10.2"}
+                               org.clojure/clojurescript {:mvn/version "1.10.764"}}}}}
